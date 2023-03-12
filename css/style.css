@@ -32,7 +32,7 @@ body {
 }
 
 .form-section {
-  background-image: url(/images/bg-boost-desktop.svg);
+  background-image: url(../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: bottom right;
@@ -50,7 +50,7 @@ body {
 }
 
 .boost {
-  background-image: url(/images/bg-boost-desktop.svg);
+  background-image: url(../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
   background-position: cover;
   /* background-size: 100%; */
