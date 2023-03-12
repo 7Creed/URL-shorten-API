@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* * {
+  outline: red 2px solid;
+} */
+
+/* :root {
+  ### Colours
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+  --Font-size: 18px;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  padding-inline: 6rem;
+}
+
+.form-section {
+  background-image: url(/images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: bottom right;
+  background-size: bottom right;
+}
+
+.line {
+  /* width: 500px; */
+  height: 6px;
+}
+
+.line_m {
+  width: 5px;
+  height: 600px;
+}
+
+.boost {
+  background-image: url(/images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  /* background-size: 100%; */
+  /* background-position: 100% -20%; */
+  /* background-color: hsl(0 87% 67% ); */
+}
+
+/* .anc a {
+  transition: color ease-in 5s;
+}
+.anc a svg:hover > path {
+  fill: red;
+  transition: fill ease-in 0.2s;
+} */
+
+/* .space {
+  @apply 
+} */
+
+.custom_red {
+  /* outline: darkred solid 2px; */
+  border: rgb(194, 34, 34) solid 2px;
+  /* background-color: red; */
+  background-image: linear-gradient(
+    to right,
+    rgb(201, 137, 137),
+    rgba(232, 210, 210, 0.992)
+  );
+}
+
+.custom_red::placeholder {
+  color: rgb(212, 31, 31);
+}
+
+.p_red {
+  color: rgb(212, 31, 31);
+}
+
+/* .copyDiv::before {
+  content: "";
+  height: 3px;
+  background-color: red;
+  display: inline-block;
+  width: 100%;
+} */
+
+/* .del {
+  background: rgb(228, 37, 37);
+} */
+
+/* .del {
+  background: blue;
+} */
+
+@media (max-width: 996px) {
+  .wrapper {
+    padding-inline: 3rem;
+  }
+
+  .text-area {
+    min-width: 60%;
+  }
+
+  .img-area img {
+    position: inherit;
+    left: -5rem;
+    width: 100%;
+  }
+  /* form #but {
+    width: 90%;
+  } */
+  /* 
+  hr {
+    height: 2px;
+    width: 100%;
+    background: black 2px solid;
+  } */
+
+  footer .cont {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 766px) {
+  .img_m {
+    left: 42%;
+    top: -15%;
+  }
+
+  form #but {
+    width: 90%;
+  }
+
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    left: 100%;
+    top: 70px;
+    flex-direction: column;
+    text-align: center;
+    background: var(--Dark-Violet);
+    transition: 0.5s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .bord__t {
+    padding-bottom: 10px;
+  }
+
+  .bord__b {
+    border-top: 1px solid rgb(205, 208, 211);
+    padding-inline: 0;
+    padding-block: 10px;
+    margin-inline: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .wrapper {
+    padding-inline: 1rem;
+  }
+
+  .shortly {
+    height: 30px;
+  }
+
+  .img_m {
+    left: 37%;
+    top: -15%;
+  }
+  .img-area {
+    overflow: visible;
+  }
+
+  .img-area img {
+    position: inherit;
+    left: 3rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .copyDiv {
+    display: block;
+  } */
+}
+
+@media (min-width: 426px) and (max-width: 800px) {
+  .text__extra {
+    font-size: 1.12rem;
+    /* line-height: 1.5rem; */
+  }
+}
